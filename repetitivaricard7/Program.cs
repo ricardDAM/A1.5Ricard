@@ -22,20 +22,14 @@ namespace repetitivaricard7
 
 
             while (numero != 0)
-            {
-               
-
-             
-
+            {            
                 if (numeroGran<numero )numeroGran = numero;
                 else if (numeroPetit>numero )numeroPetit = numero;
                 else
                 {
                     Console.Write("Diguem un altre numero : ");
                     numero = Convert.ToInt32(Console.ReadLine());
-                }
-
-                    
+                }       
 
             }
            
