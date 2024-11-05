@@ -14,6 +14,7 @@ namespace repetititvaricard2
             //variables
             string linia;
             int numero;
+            int cont=0;
 
             //entrada
             StreamReader sr = new StreamReader("NUMEROS.TXT");
@@ -24,20 +25,14 @@ namespace repetititvaricard2
             
             while (linia != null)
             {
-
-               numero =Convert.ToInt32(linia);
-                Console.WriteLine(numero);
+                cont++;
+               numero =Convert.ToInt32(linia);          
                 linia= sr.ReadLine();
              
             }
 
-
-
-
             sr.Close();
-
-
-
+            Console.WriteLine($"S'han trobat {cont} numeros");
 
         }
     }
