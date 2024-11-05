@@ -7,7 +7,7 @@ namespace repetititvaricard1
         static void Main(string[] args)
         {
 
-            //1. Fes un programa per contar quants valors enters introdueix un usuari per Consola.
+            //1.Fes un programa per contar quants valors enters introdueix un usuari per Consola.
             //Deixarem de contar valors en trobar el valor 0.
             
             //variables
