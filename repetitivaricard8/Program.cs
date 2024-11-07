@@ -21,7 +21,7 @@ namespace repetitivaricard8
             StreamReader sr = new StreamReader("NUMEROS.TXT");
 
             linia = sr.ReadLine();
-            
+
             numero = Convert.ToInt32(linia);
             numeroGran = numero;
             numeroPetit = numero;
