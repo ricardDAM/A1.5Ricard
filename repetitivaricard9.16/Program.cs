@@ -27,7 +27,7 @@
 
             StreamReader sr = new StreamReader("coordenades.txt");
 
-            //algorisme i sortida
+            //algorisme i sortida   
             while ((linia = sr.ReadLine()) != null)
             {
                 x = Convert.ToDouble(linia);
