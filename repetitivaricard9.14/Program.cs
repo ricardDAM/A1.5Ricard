@@ -17,8 +17,8 @@ namespace repetitivaricard9._14
             cada BONUS.
             ● Finalment, calcula el total dels guanys i el nombre de bitllets amb BONUS.*/
 
-
-            string linia;
+                //variables
+                string linia;
                 int cont1 = 0;
                 int acumuladorDiners = 0;
                 int numero;
