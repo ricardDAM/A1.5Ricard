@@ -13,9 +13,10 @@ namespace repetitivaricard9._15
              ● Cal comptar els partits guanyats, perduts i empatats del Girona.
              ● Cada victòria suma 3 punts i cada empat 1 punt.
              ● Calcula el total de punts obtinguts*/
+            
 
+            //variables
             string linia;
-            int numero;
             int puntsTotals = 0;
             int guanyat = 0;
             int empatat = 0;
