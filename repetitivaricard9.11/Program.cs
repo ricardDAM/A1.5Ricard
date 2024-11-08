@@ -15,7 +15,7 @@ namespace repetitivaricard9._11
             e.Quan el procés acaba, ens ha d’informar de quantes iteracions han calgut
             per poder completar correctament les 4 operacions. */
           
-            
+            //variables
             int intents = 0;
             bool encertat = false;
             int num1;
@@ -30,6 +30,7 @@ namespace repetitivaricard9._11
             int divisioCorrecte;
             Random rand = new Random();
 
+            //algorisme i sortida
             while (!encertat)
             {
                  intents++;
