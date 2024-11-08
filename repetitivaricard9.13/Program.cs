@@ -23,12 +23,13 @@ namespace repetitivaricard9._13
 
             //variables
             string linia;
-            int cont1 = 0;
-            int cont2 = 0;
+            int contBonus = 0;
+            int contNoBonus = 0;
             int contGeneral = 0;
-            int numeroDau;
+            int numeroRandom;
             double percentatge;
             int dinersBonus = 0;
+          
             //entrada
             StreamReader sr = new StreamReader("bonus.TXT");
             Random rand = new Random();
@@ -40,23 +41,21 @@ namespace repetitivaricard9._13
             {
                 if (linia == "BONUS")
                 {
-                    numeroDau = rand.Next(1,11);
-                    dinersBonus = dinersBonus + numeroDau;
-                    cont1++;
+                    numeroRandom = rand.Next(1,11);
+                    dinersBonus = dinersBonus + numeroRandom;
+                    contBonus++;
                 }
-                else if (linia == "NO BONUS") cont2++;
+                else if (linia == "NO BONUS") contNoBonus++;
 
-                linia = sr.ReadLine();
-
-            
+                linia = sr.ReadLine();      
             }
             sr.Close();
             // sortida
-            contGeneral = cont1 + cont2;
-            percentatge = Math.Round(((double)cont1 / contGeneral),4) * 100;
+            contGeneral = contBonus + contNoBonus;
+            percentatge = Math.Round(((double)contBonus / contGeneral),4) * 100;
 
             Console.WriteLine($"S'han distribuit {contGeneral} bitllets.");
-            Console.WriteLine($"S'han distribuit {cont1} bonus.");
+            Console.WriteLine($"S'han distribuit {contBonus} bonus.");
             Console.WriteLine($"El percentatge de guanyadors que hi ha respecte el total es del {percentatge} %");
             Console.WriteLine($"Ha guanyat {dinersBonus} € en total");
 
