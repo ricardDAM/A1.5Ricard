@@ -20,13 +20,14 @@
             double x, y;
             double radi;
             double distancia;
+
             //entrada
             Console.Write("Introdueix el valor del radi : ");
             radi = Convert.ToDouble(Console.ReadLine());
 
             StreamReader sr = new StreamReader("coordenades.txt");
 
-
+            //algorisme i sortida
             while ((linia = sr.ReadLine()) != null)
             {
                 x = Convert.ToDouble(linia);
