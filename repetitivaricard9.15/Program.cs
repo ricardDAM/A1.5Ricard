@@ -25,7 +25,7 @@ namespace repetitivaricard9._15
             int resultatRival;
 
             //entrada
-            StreamReader sr = new StreamReader("Girona lliga23_24.txt");
+            StreamReader sr = new StreamReader("lliga2324.txt");
             linia = sr.ReadLine();
 
             //algorisme
