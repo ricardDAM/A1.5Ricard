@@ -21,8 +21,8 @@ namespace repetitivaricard9._15
             int guanyat = 0;
             int empatat = 0;
             int perdut = 0;
-            int resultatGirona;
-            int resultatRival;
+            int girona;
+            int rival;
 
             //entrada
             StreamReader sr = new StreamReader("lliga2324.txt");
@@ -33,17 +33,17 @@ namespace repetitivaricard9._15
             while (linia != "-1")
             {
              
-                 resultatGirona = Convert.ToInt32(linia);
+                 girona = Convert.ToInt32(linia);
                  linia = sr.ReadLine();         
-                 resultatRival = Convert.ToInt32(linia);
+                 rival = Convert.ToInt32(linia);
 
                
-                if (resultatGirona > resultatRival)
+                if (girona > rival)
                 {
                     guanyat++;
                     puntsTotals += 3; 
                 }
-                else if (resultatGirona == resultatRival)
+                else if (girona == rival)
                 {
                     empatat++;
                     puntsTotals += 1; 
