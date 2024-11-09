@@ -13,7 +13,7 @@ namespace repetitivaricard9._15
              ● Cal comptar els partits guanyats, perduts i empatats del Girona.
              ● Cada victòria suma 3 punts i cada empat 1 punt.
              ● Calcula el total de punts obtinguts*/
-            
+
 
             //variables
             string linia;
@@ -26,7 +26,7 @@ namespace repetitivaricard9._15
             int cont = 0;
 
             //entrada
-            StreamReader sr = new StreamReader("lliga2324.txt");
+            StreamReader sr = new StreamReader("Girona lliga23_24.txt");
             linia = sr.ReadLine();
 
             //algorisme
