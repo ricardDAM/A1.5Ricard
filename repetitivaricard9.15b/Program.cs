@@ -80,12 +80,6 @@
 
             }
         }
-
-         
-                
-
-
-
             sr.Close();
 
             // Sortida
