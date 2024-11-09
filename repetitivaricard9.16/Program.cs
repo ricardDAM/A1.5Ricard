@@ -17,7 +17,8 @@
 
             //variables
             string linia;
-            double x, y;
+            double x;
+            double y;
             double radi;
             double distancia;
 
@@ -26,9 +27,11 @@
             radi = Convert.ToDouble(Console.ReadLine());
 
             StreamReader sr = new StreamReader("coordenades.txt");
+            linia = sr.ReadLine();
+
 
             //algorisme i sortida   
-            while ((linia = sr.ReadLine()) != null)
+            while (linia != null)
             {
                 x = Convert.ToDouble(linia);
                 linia = sr.ReadLine();
@@ -37,15 +40,15 @@
 
                 if (distancia < radi)
                 {
-                    Console.WriteLine($"El punt ({x}, {y}) està dins de la circumferència.");
+                    Console.WriteLine($"x :  {x} i  y: {y} esta dins de la circumferencia.");
                 }
                 else if (distancia == radi)
                 {
-                    Console.WriteLine($"El punt ({x}, {y}) està sobree el perímetre de la circumferència.");
+                    Console.WriteLine($"x : {x} i  y: {y} esta sobree el perímetre de la circumferencia.");
                 }
                 else
                 {
-                    Console.WriteLine($"El punt ({x}, {y}) està fora de la circumferència.");
+                    Console.WriteLine($" x; {x} i  y : {y} esta fora de la circumferencia.");
                 }
             }
 
