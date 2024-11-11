@@ -23,7 +23,7 @@
             int cont = 0;
 
             //entrada
-            StreamReader sr = new StreamReader("Girona lliga23_24.txt");
+            StreamReader sr = new StreamReader("Girona lliga23_24(visitant-local).txt");
             linia = sr.ReadLine();
 
             //algorisme
