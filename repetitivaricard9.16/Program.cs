@@ -48,8 +48,10 @@
                 }
                 else
                 {
-                    Console.WriteLine($" x; {x} i  y : {y} esta fora de la circumferencia.");
+                    Console.WriteLine($" x : {x} i  y : {y} esta fora de la circumferencia.");
                 }
+                linia = sr.ReadLine();
+
             }
 
             sr.Close();
