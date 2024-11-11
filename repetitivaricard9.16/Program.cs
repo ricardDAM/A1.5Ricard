@@ -30,7 +30,7 @@
             linia = sr.ReadLine();
 
 
-            //algorisme i sortida   
+            //algorisme i sortida    //esta malament corretgir
             while (linia != null)
             {
                 x = Convert.ToDouble(linia);
@@ -38,18 +38,10 @@
                 y = Convert.ToDouble(linia);
                 distancia = Math.Sqrt(x * x + y * y);
 
-                if (distancia < radi)
-                {
-                    Console.WriteLine($"x :  {x} i  y: {y} esta dins de la circumferencia.");
-                }
-                else if (distancia == radi)
-                {
-                    Console.WriteLine($"x : {x} i  y: {y} esta sobree el perímetre de la circumferencia.");
-                }
-                else
-                {
-                    Console.WriteLine($" x : {x} i  y : {y} esta fora de la circumferencia.");
-                }
+                if (distancia < radi)Console.WriteLine($"x :  {x} i  y: {y} esta dins de la circumferencia.");
+                else if (distancia == radi)Console.WriteLine($"x : {x} i  y: {y} esta sobree el perímetre de la circumferencia.");
+                else  Console.WriteLine($" x : {x} i  y : {y} esta fora de la circumferencia.");
+
                 linia = sr.ReadLine();
 
             }
