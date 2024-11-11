@@ -30,7 +30,7 @@
             linia = sr.ReadLine();
 
 
-            //algorisme i sortida    //esta malament corretgir
+            //algorisme i sortida   
             while (linia != null)
             {
                 x = Convert.ToDouble(linia);
